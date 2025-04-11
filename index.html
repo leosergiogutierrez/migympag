@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Gym Cobra Kai</title>
+  <link rel="stylesheet" href="css/estilos.css" />
+</head>
+
+<body>
+
+  <!-- Encabezado -->
+  <header>
+    <nav class="navbar">
+      <h1 class="logo"><a href="index.html">Gym Cobra Kai</a>
+      <img src="img/logo_cobrakai.jpg" alt="Logo Cobra Kai" class="logo-svg" />
+    </h1>
+    <button id="modo-toggle">🌙 Cambiar modo</button>
+      <ul class="menu">
+        <li class="dropdown">
+            <a href="clases.html">Clases</a> <!-- Este enlace lleva a clases.html -->
+            <ul class="submenu">
+              <li><a href="#">Funcional</a></li>
+              <li><a href="#">Crossfit</a></li>
+              <li><a href="#">Yoga</a></li>
+            </ul>
+          </li>
+          
+        <li class="dropdown">
+          <a href="entrenadores.html">Entrenadores</a> <!-- Este enlace lleva a entrenadores.html -->
+          <ul class="submenu">
+            <li><a href="#">Personal Trainers</a></li>
+            <li><a href="#">Nutricionistas</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="precios.html">Precios</a>
+          <ul class="submenu">
+            <li><a href="#">Mensual</a></li>
+            <li><a href="#">Trimestral</a></li>
+            <li><a href="#">Anual</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="blog.html">Blog</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+<!--SECCION HERO-->
+<section class="hero">
+    <video autoplay muted loop playsinline class="video-fondo">
+      <source src="video/video_fondo.mp4" type="video/mp4" />
+      Tu navegador no soporta videos HTML5.
+    </video>
+  
+    <div class="hero-texto">
+      <h1>Entrená como un Campeón!</h1>
+      <p>Llegá al siguiente nivel con el equipo Gym Cobra Kai</p>
+    </div>
+  </section>
+  
+  <section class="clases">
+    <h2>Nuestras Clases</h2>
+    <div class="clases-grid">
+      <div class="clase-card">
+        <img src="img/funcional.jpg" alt="Funcional" />
+        <h3>Entrenamiento Funcional</h3>
+      </div>
+      <div class="clase-card">
+        <img src="img/crossfit.jpg" alt="CrossFit" />
+        <h3>CrossFit</h3>
+      </div>
+      <div class="clase-card">
+        <img src="img/yoga.jpg" alt="Yoga" />
+        <h3>Yoga</h3>
+      </div>
+    </div>
+  </section>
+  
+  <section class="contador">
+    <div class="contador-item">
+      <span class="numero">500+</span>
+      <p>Socios satisfechos</p>
+    </div>
+    <div class="contador-item">
+      <span class="numero">20</span>
+      <p>Entrenadores certificados</p>
+    </div>
+    <div class="contador-item">
+      <span class="numero">35</span>
+      <p>Clases semanales</p>
+    </div>
+  </section>
+  
+  <section class="testimonios">
+
+      <!-- Radios para controlar el carrusel -->
+      <input type="radio" name="slider" id="slide1" checked>
+      <input type="radio" name="slider" id="slide2">
+      <input type="radio" name="slider" id="slide3">
+    </div>
+    
+      <!-- Contenedor de testimonios -->
+      <div class="slides">
+        <div class="slide" id="s1">
+          <p>"El mejor gimnasio."</p>
+          <span>- Miguel Diaz.</span>
+        </div>
+        <div class="slide" id="s2">
+          <p>"Entrenadores excelentes."</p>
+          <span>- Terry Silver.</span>
+        </div>
+        <div class="slide" id="s3">
+          <p>"Amo las clases de yoga y</p>
+          <p>funcional. 10/10"</p>
+          <span>- Kenny P.</span>
+        </div>
+      </div>
+  
+      <!-- Botones circulares -->
+      <div class="nav-manual">
+        <label for="slide1" class="boton"></label>
+        <label for="slide2" class="boton"></label>
+        <label for="slide3" class="boton"></label>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-contenido">
+  
+      <!-- Formulario de Newsletter -->
+      <div class="newsletter">
+        <h3>Suscribite al Newsletter</h3>
+        <form action="#" method="post">
+          <input type="email" placeholder="Tu correo electrónico" required>
+          <button type="submit">Suscribirme</button>
+        </form>
+      </div>
+  
+      <!-- Redes Sociales -->
+      <div class="redes-sociales">
+        <h3>Seguinos</h3>
+        <a href="https://es-la.facebook.com/login/" target="_blank">Facebook</a>
+        <a href="https://www.instagram.com/accounts/login/" target="_blank">Instagram</a>
+        <a href="https://www.youtube.com/" target="_blank">YouTube</a>
+      </div>
+      <!--contacto -->
+      <div class="boton-contacto-wrapper">
+        <a href="contactos.html" class="boton-contacto">Contacto</a>
+      </div>
+      
+
+
+    <!--BLOG-->
+<section class="adelanto-blog">
+  <h2>📰 Últimas del Blog</h2>
+
+  <div class="mini-blog-grid">
+    <article class="mini-entrada">
+      <h3>💪 Cómo mejorar tu rendimiento</h3>
+      <p>Consejos prácticos para entrenar mejor cada semana...</p>
+      <a href="blog.html">Leer más →</a>
+    </article>
+
+    <article class="mini-entrada">
+      <h3>🍎 Nutrición para resultados</h3>
+      <p>Descubrí los mejores alimentos post entrenamiento...</p>
+      <a href="blog.html">Leer más →</a>
+    </article>
+  </div>
+
+    
+      <!-- Mapa -->
+      <div class="mapa">
+        <h3>Dónde estamos</h3>
+        <iframe 
+          src="https://www.openstreetmap.org/export/embed.html?bbox=-58.4085,-34.6037,-58.4037,-34.6005&amp;layer=mapnik"
+          style="border:0;" allowfullscreen="" loading="lazy"
+          width="100%" height="200"></iframe>
+      </div>      
+    </div>
+  
+</section>
+    <p class="footer-copy">&copy; 2025 Gym Cobra Kai. Todos los derechos reservados.</p>
+  </footer>
+  <script>
+    const toggle = document.getElementById("modo-toggle");
+    toggle.addEventListener("click", () => {
+      document.body.classList.toggle("modo-claro");
+    });
+  </script>
+  
+</body>
+</html>

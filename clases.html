@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clases - Gym Cobra Kai</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+  <header>
+    <h1>Clases del Gimnasio</h1>
+  </header>
+
+  <!-- LINK VOLVER A INICIO -->
+
+  <div class="volver-inicio">
+    <a href="index.html">← Volver al inicio</a>
+  </div>
+  
+  <!-- FILTRO POR CATEGORÍA -->
+  <section class="filtros">
+    <h2>Filtrar por Categoría</h2>
+  
+    <!-- ✅ Inputs directamente dentro del section -->
+    <input type="radio" name="filtro" id="todos" checked>
+    <label for="todos">Todos</label>
+  
+    <input type="radio" name="filtro" id="musculacion">
+    <label for="musculacion">Musculación</label>
+  
+    <input type="radio" name="filtro" id="crossfit">
+    <label for="crossfit">CrossFit</label>
+  
+    <input type="radio" name="filtro" id="yoga">
+    <label for="yoga">Yoga</label>
+  
+    <input type="radio" name="filtro" id="spinning">
+    <label for="spinning">Spinning</label>
+  
+    <!-- ✅ Galería está justo después de los inputs -->
+    <div class="galeria">
+      <div class="tarjeta musculacion fade-in delay-1"><img src="img/musculacion.jpg"><p>Entrenamiento de Fuerza</p></div>
+      <div class="tarjeta crossfit fade-in delay-2"><img src="img/crossfit_nivel_intermedio.jpg"><p>CrossFit nivel intermedio</p></div>
+      <div class="tarjeta yoga fade-in delay-3"><img src="img/yoga_relajante.jpg"><p>Yoga relajante</p></div>
+      <div class="tarjeta spinning fade-in delay-4"><img src="img/spinning_nivel_inicial.jpg"><p>Spinning Nivel Inicial</p></div>
+    </div>
+  </section>
+  
+
+  <!-- TABLA DE HORARIOS -->
+  <section class="horarios">
+    <!-- Tabla responsive -->
+    <h2>Horarios Semanales</h2>
+
+    <div class="tabla-horarios">
+      <table>
+        <thead>
+          <tr>
+            <th>Día</th>
+            <th>08:00</th>
+            <th>10:00</th>
+            <th>14:00</th>
+            <th>18:00</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Lunes</td>
+            <td>Musculación</td>
+            <td>Yoga</td>
+            <td>Spinning</td>
+            <td>CrossFit</td>
+          </tr>
+          <tr>
+            <td>Martes</td>
+            <td>Spinning</td>
+            <td>CrossFit</td>
+            <td>Musculación</td>
+            <td>Yoga</td>
+          </tr>
+          <!-- Agregá más días si querés -->
+        </tbody>
+      </table>
+    </div>
+    
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Gym Cobra Kai. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>

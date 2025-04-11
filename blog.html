@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog de Fitness - Gym Cobra Kai</title>
+  <link rel="stylesheet" href="css/estilos.css" />
+</head>
+<body>
+
+  <!-- Encabezado del blog -->
+  <header class="blog-header">
+    <h1>📰 Blog de Fitness</h1>
+    <p>Artículos, tips y consejos para tu entrenamiento y bienestar</p>
+  </header>
+
+  <!-- Sección del Blog con filtros -->
+  <section class="filtros-blog">
+
+    <!-- Radios afuera para que funcione el CSS -->
+    <input type="radio" name="categoria" id="todos" checked />
+    <input type="radio" name="categoria" id="nutricion" />
+    <input type="radio" name="categoria" id="entrenamiento" />
+    <input type="radio" name="categoria" id="bienestar" />
+
+    <!-- Etiquetas de filtros -->
+    <div class="filtros-tags">
+      <label for="todos">Todos</label>
+      <label for="nutricion">🍎 Nutrición</label>
+      <label for="entrenamiento">💪 Entrenamiento</label>
+      <label for="bienestar">🧘 Bienestar</label>
+    </div>
+
+    <!-- Grid de artículos -->
+    <div class="blog-grid">
+
+      <article class="entrada nutricion">
+        <img src="img/nutricion.jpg" alt="Nutrición post-entreno" />
+        <h2>Alimentación post-entreno</h2>
+        <p>Recuperate bien y ganá masa muscular después del gym.</p>
+        <span class="tag">Nutrición</span>
+      </article>
+
+      <article class="entrada entrenamiento">
+        <img src="img/entrenamiento.jpg" alt="HIIT">
+        <h2>HIIT para quemar grasa</h2>
+        <p>Rutina de 20 min, alta intensidad.</p>
+        <span class="tag">Entrenamiento</span>
+      </article>
+
+      <article class="entrada bienestar">
+        <img src="img/bienestar.jpg" alt="Mindfulness">
+        <h2>Mindfulness para entrenar</h2>
+        <p>Rendí más con foco mental.</p>
+        <span class="tag">Bienestar</span>
+      </article>
+
+      <article class="entrada nutricion">
+        <img src="img/nutricion.jpg" alt="Snacks saludables">
+        <h2>Snacks saludables</h2>
+        <p>Ideas para evitar la comida chatarra entre comidas.</p>
+        <span class="tag">Nutrición</span>
+      </article>
+
+      <article class="entrada entrenamiento">
+        <img src="img/entrenamiento.jpg" alt="Fuerza funcional">
+        <h2>Fuerza funcional</h2>
+        <p>Ejercicios para tu vida cotidiana.</p>
+        <span class="tag">Entrenamiento</span>
+      </article>
+
+      <article class="entrada bienestar">
+        <img src="img/bienestar.jpg" alt="Sueño y descanso">
+        <h2>Descanso óptimo</h2>
+        <p>La importancia del sueño en tu progreso.</p>
+        <span class="tag">Bienestar</span>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- Sección de Comentarios -->
+  <section class="comentarios">
+    <h2>Comentarios</h2>
+
+    <!-- Comentario 1 -->
+    <div class="comentario">
+      <div class="avatar" data-inicial="F"></div>
+      <div class="contenido">
+        <h4>@usuario_fit</h4>
+        <div class="texto">
+          <p>¡Muy buen artículo! Me encantó la parte de nutrición.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Comentario 2 -->
+    <div class="comentario">
+      <div class="avatar" data-inicial="G"></div>
+      <div class="contenido">
+        <h4>@gymlover</h4>
+        <div class="texto">
+          <p>¡Gracias por los consejos! Ya empecé con la rutina nueva.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Formulario de comentario -->
+    <form class="form-comentario">
+      <textarea placeholder="Escribí tu comentario..." required></textarea>
+      <button type="submit">Publicar</button>
+    </form>
+  </section>
+
+  <!-- Botón para volver -->
+  <a href="index.html" class="volver-inicio">← Volver al inicio</a>
+
+</body>
+</html>
